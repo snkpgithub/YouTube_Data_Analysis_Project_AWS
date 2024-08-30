@@ -1,0 +1,31 @@
+graph LR
+    A[Source Systems] -->|S3 API| B[Bulk]
+    B --> C[Data Lake]
+    C --> D[Landing Area]
+    C --> E[Cleansed / Enriched]
+    C --> F[Analytics / Reporting]
+    
+    G[AWS Step Functions] --> C
+    
+    H[Data Processing] --> C
+    I[AWS Glue] --> H
+    J[AWS Lambda] --> H
+    
+    K[Data Catalogue & Classification] --> C
+    L[AWS Glue Data Catalog] --> K
+    
+    M[API] --> N[Analytical Data Access]
+    N --> O[AWS Athena]
+    N --> P[Redshift]
+    
+    Q[Target Systems] --> R[Analytics]
+    R --> S[Notebooks]
+    R --> T[QuickSight]
+    R --> U[Qlik]
+    
+    V[AWS Identity & Access Management] --> C
+    
+    W[Monitoring / Alert] --> X[AWS CloudWatch]
+    
+    %% Data Flow
+    A --> B --> C --> M
