@@ -39,9 +39,9 @@ Dataset source: [YouTube Trending Video Dataset](https://www.kaggle.com/datasets
 
 ## Project Structure
 
-Clone the repository to your local machine.
-Set up your AWS credentials and configure the necessary IAM roles and permissions.
-Ingest data from the Kaggle dataset into Amazon S3.
-Use AWS Glue to transform and load data into the data lake.
-Query the data with AWS Athena and visualize results with Amazon QuickSight.
-Deploy your Lambda functions to automate the process and ensure scalability.
+1. Clone the repository to your local machine.
+2. Set up your AWS credentials and configure the necessary IAM roles and permissions.
+3. Ingest data from the Kaggle dataset into Amazon S3.
+4. Use AWS Glue to transform and load data into the data lake.
+5. Query the data with AWS Athena and visualize results with Amazon QuickSight.
+6. Deploy your Lambda functions to automate the process and ensure scalability.
